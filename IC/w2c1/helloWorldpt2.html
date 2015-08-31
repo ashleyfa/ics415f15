@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hello World - ICS415</title>
+</head>
+<body>
+<table border = "1" width = "100%">
+  <tr>
+    <td colspan = "3">
+      <p align = "center"><h1 align = "center">Hello World!</h1>
+      <p align = "center">Welcome to my website.
+
+        <br>More information in the table below
+    </td>
+  </tr>
+  <tr valign = "top">
+    <td id = "row2col1" width = "25%" rowspan = "2">
+      <h4 align = "center">Navigation</h4>
+      <p align = "center"><a href = "helloWorldpt2.html">Home</a></p>
+      <p align = "center"><a href = "helloWorldpt2.html">Nothing</a></p>
+      <footer>
+        <p>Posted by: Ashley Fagaragan</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+          someone@example.com</a>.</p>
+      </footer>
+    </td>
+    <td id = "row2col2" width = "50%">
+      <p align = "center"><b>Week 1</b></p>
+      <table border = "1">
+        <caption>Table</caption>
+        <td>Picture</td>
+        <td>Site</td>
+        <td>Link</td>
+        </tr>
+        <tr>
+          <td><img src = "http://2.bp.blogspot.com/-ZVxEkrY04Fs/U15D5uCL-xI/AAAAAAAAOdQ/pJ-Wc99LmPY/s1600/logo_col_874x288.png" width = "70" height = "25"></td>
+          <td> Google</td>
+          <td><a href = "http://google.com">Link</a></td>
+        </tr>
+        <tr>
+          <td><img src ="http://emedia.leeward.hawaii.edu/emc/sites/default/files/userfiles/image/laulima_leaf.png" width = "40" height = "70"></td>
+          <td> Laulima</td>
+          <td><a href = "http://Laulima.hawaii.edu">Link</a></td>
+        </tr>
+        <tr>
+          <td><img src ="http://info.kauaicc.hawaii.edu/programs/liberalarts/images/myuh.jpg" width = "50" height = "70"></td>
+          <td> MYUH</td>
+          <td><a href = "http://myuh.hawaii.edu">Link</a></td>
+        </tr>
+      </table>
+
+      <br>
+
+      <h3>Lists of numbers</h3>
+      <ol>
+        <li>Number 1</li>
+        <li>Number 2</li>
+        <li>Number 3</li>
+      </ol>
+    </td>
+    <td id = "row2col3" rowspan = "2">
+      <p align = "center"><b>Inputs</b></p>
+      <form method = "get">
+        <p>Date: <input type = "date" name="date"></p>
+        <p>Select your favorite color:</p>
+        <input type="color" name = "favcolor">
+
+        <p>Email: <input type = "email" name="email"></p>
+        <p>Search: <input type = "search" name="searchbar"></p>
+        <input type="submit" value="Submit">
+      </form>
+
+    </td>
+  </tr>
+
+  <td id = "row3col2" width = "20%">
+    <p align = "center" >
+      <b>Week 2</b>
+    </p>
+    <p>Canvas:
+    </p>
+    <canvas id="myCanvas" width="200" height="100">
+      Your browser does not support the HTML5 canvas tag.
+    </canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(0,0,150,75);
+    </script>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95,50,40,0,2*Math.PI);
+      ctx.stroke();
+      var grd = ctx.createLinearGradient(0,0,200,0);
+      grd.addColorStop(0,"red");
+      grd.addColorStop(1,"white");
+
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10,10,150,80);
+
+    </script>
+    <br>
+    <p>Inline Scalable Vector:</p>
+    <svg width="100" height="100">
+      <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+    <br>
+    <p>Video & Audio:</p>
+    <p>Video:</p>
+    <video width="420" height="240" src = "Video%201.mov" controls>
+      Your browser does not support the video tag.
+    </video>
+
+    <p>Audio:</p>
+    <audio controls>
+      <source src="679%20(Feat.%20Remy%20Boyz).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Semantic Elements:</p>
+    <article>
+      <header>
+        <h1>Most important heading here</h1>
+        <h3>Less important heading here</h3>
+        <p>Some additional information here</p>
+      </header>
+      <p>okay...</p>
+    </article>
+
+  </td>
+
+  </td>
+  </tr>
+
+</table>
+</body>
+</html>
