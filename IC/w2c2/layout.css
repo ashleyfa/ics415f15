@@ -1,0 +1,17 @@
+body{
+    background-color: #D8E5E5;
+}
+
+#top{
+    background-color: #ffffff;
+}
+
+#sidebar{
+    background-color:#ffffff;
+    position: absolute;
+}
+
+#body{
+    background-color: #ffffff;
+    position: absolute;
+}
