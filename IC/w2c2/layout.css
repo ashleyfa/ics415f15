@@ -1,17 +1,39 @@
 body{
-    background-color: #D8E5E5;
+    background: #000 url("wood-background1.jpg") repeat;
+    width: 90%;
+    position: static;
 }
 
-#top{
-    background-color: #ffffff;
+header, footer, aside, nav, article{
+    display: block;
 }
 
-#sidebar{
-    background-color:#ffffff;
-    position: absolute;
+header{
+    background-color: rgb(249, 153, 154);
+    left:50px;
 }
 
-#body{
-    background-color: #ffffff;
-    position: absolute;
+#Introduction{
+    margin-top: 10px;
+    padding: 44px;
+    width: 90%;
+}
+
+nav {
+    background-color:#fff;
+}
+
+#mixContent{
+    display:table;
+    background-color: #fff;
+    width: 90%
+}
+
+#mainContent{
+    display: table-cell;
+    padding-right: 100px;
+}
+
+aside{
+    display:table-cell;
 }
