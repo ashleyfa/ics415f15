@@ -1,39 +1,43 @@
 body{
     background: #000 url("wood-background1.jpg") repeat;
-    width: 90%;
-    position: static;
+
+    position: absolute;
 }
 
 header, footer, aside, nav, article{
     display: block;
+    width: 100%;
 }
 
-header{
-    background-color: rgb(249, 153, 154);
-    left:50px;
+#intro h1{
+
 }
 
-#Introduction{
+#intro{
+    background-color:rgb(249, 153, 154);
     margin-top: 10px;
-    padding: 44px;
-    width: 90%;
+    padding: 10px;
+    background-size: 100%;
+    width: 720px;
 }
 
 nav {
+    position: absolute;
+    width: 100%;
     background-color:#fff;
 }
 
 #mixContent{
     display:table;
     background-color: #fff;
-    width: 90%
+    width: 620px;
 }
 
 #mainContent{
     display: table-cell;
-    padding-right: 100px;
 }
 
 aside{
     display:table-cell;
+    width: 300px;
 }
