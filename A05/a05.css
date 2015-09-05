@@ -154,7 +154,7 @@ aside p{
 }
 
 section a{
-    color: black;
+    color: #f08a24;
     text-decoration: none;
 }
 
@@ -188,3 +188,7 @@ footer p{
     font-family: Arial, sans-serif;
 }
 
+h3{
+    text-align: center;
+    color: #f08a24;
+}
