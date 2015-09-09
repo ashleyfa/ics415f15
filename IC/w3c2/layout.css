@@ -1,0 +1,8 @@
+section{
+    display: block;
+}
+
+#main_content{
+    border-width: 5px;
+    border-style: dotted;
+}
