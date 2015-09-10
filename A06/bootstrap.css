@@ -7,8 +7,20 @@
 }
 */
 
+.container{
+    background-color: white;
+
+}
+
+.page-header{
+    margin-top: 0;
+}
 .panel{
     margin-bottom: 0;
+}
+
+.panel-footer{
+    margin: 0 auto;
 }
 
 .navbar{
@@ -38,4 +50,9 @@
 .navbar-default .navbar-nav > .open > a:focus {
     color: #00bfbf;
     background-color: #D5D5D5;
+}
+
+.navbar p{
+    color: white;
+    text-align: center;
 }
