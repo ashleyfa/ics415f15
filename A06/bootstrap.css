@@ -1,0 +1,41 @@
+/*.jumbotron{
+    margin-bottom: 0;
+    background-color: white;
+    @media (max-width: @screen-md-min) {
+        height: 25%; //Or any value you want
+    }
+}
+*/
+
+.panel{
+    margin-bottom: 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.navbar-default{
+    background-color: #333333;
+    border-color: #262626;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: white;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #00bfbf;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color: #737373;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #00bfbf;
+    background-color: #D5D5D5;
+}
