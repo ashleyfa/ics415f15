@@ -1,9 +1,18 @@
-body {
+html, body {
+    height: 100%;
     background-image: url(tumblr_static_background2.jpg);
 }
 
 p{
     font-family: Arial, sans-serif;
+}
+
+#header{
+    height: 25%;
+}
+
+#container2{
+    height: 100%;
 }
 
 h1{
