@@ -7,7 +7,7 @@ p{
     font-family: Arial, sans-serif;
 }
 
-header, footer{
+header, footer, section{
     display:block;
 }
 
@@ -89,3 +89,4 @@ footer p{
     text-align: center;
     color: white;
 }
+
