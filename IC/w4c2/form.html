@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>Bootstrap Tutorial</title>
-    <link rel = "stylesheet" type = "text/css" href="a05.css">
     <!-- Latest Compiled & Minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Optional Theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap-theme.min.css">
+    <script src ="myScript.js"></script>
 </head>
 <body>
 <!-- jQuery library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
+
 <!-- Latest compiled JavaScript -->
 <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
 <div class = "container">
-    <p><h1>Bootstrap</h1></p>
+    <p><h1>Bootstrap</h1>
     <hr>
     <nav class="nav nav-tabs">
         <div class="container-fluid">
@@ -35,7 +36,7 @@
             <p>sidebar</p>
         </div>
         <div class = "col-sm-9">
-            <form name="myForm" action="process.html" method="post">
+            <form name="myForm" action = "process.html" method = "get">
                 <div class="form-group">
                     <label for="username">User name: </label>
                     <input type="text" name="name" id="username">
@@ -48,8 +49,11 @@
                     <label for="phone">Phone Number: </label>
                     <input type="text" name="phone" id="phone">
                 </div>
-                <input type="submit" value="Submit" onsubmit = "AddData()">
+                <input type="submit" value="Submit" onclick = "AddData()">
+            </form>
+
         </div>
+
     </div>
     <div class="panel panel-default">
         <div class="panel-footer">Footer</div>
