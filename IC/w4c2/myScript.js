@@ -1,3 +1,5 @@
+window.onload = codeAddress;
+
 function AddData(){
     var table = document.getElementById('list');
     var row = document.createElement('tr');
@@ -19,11 +21,32 @@ function ResetForm(){
     document.getElementById("myForm").reset();
 }
 
-
 function goBack(){
     window.history.back();
     ResetForm();
 }
 function changeText(id){
     id.innerHTML = "Hello!";
+}
+
+function codeAddress(){
+    document.getElementById("demo").innerHTML = window.location.search;
+}
+
+function validateForm() {
+    var x = document.forms["myForm"]["username"].value;
+    if (x == null || x == "") {
+        alert("username must be filled out");
+        return false;
+    }
+    var y = document.forms["myForm"]["address"].value;
+    if (y == null || y == "") {
+        alert("address must be filled out");
+        return false;
+    }
+    var z = document.forms["myForm"]["phone"].value;
+    if (isNaN(z)) {
+        alert("address must be filled out");
+        return false;
+    }
 }
