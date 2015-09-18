@@ -1,25 +1,58 @@
 function validateForm() {
-    var i;
-    var x = document.forms["myForm"]["username"].value;
-    if (x == null || x == "") {
+    var i, j;
+    var w = document.forms["myForm"]["username"].value;
+    if (w == null || w == "") {
         document.getElementById('username').style.background = "red";
-        alert("username must be filled out");
-        return false;
+        i = 1;
     }
 
-    var y = document.forms["myForm"]["email"].value;
-    if (y == null || y == "") {
+    var x = document.forms["myForm"]["email"].value;
+    if (x == null || x == "") {
         document.getElementById('email').style.background = "red";
-        alert("email must be filled out");
+        i = 1;
+    }
+
+    var y = document.forms["myForm"]["password"].value;
+    if(y == null || y == ""){
+        document.getElementById('password').style.background = "red";
+        i = 1;
+    }
+
+    var z = document.forms["myForm"]["confirm"].value;
+    if(z == null || z == ""){
+        document.getElementById('confirm').style.background = "red";
+        i = 1;
+    }
+
+    if(i == 1){
+        document.getElementById("alert_message").style.display = 'block';
+        document.getElementById("all_error").style.display = 'block';
+        return false;
+    }
+    else{
+        if(checkPass() == false){
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+}
+
+
+function checkPass() {
+    var password1 = $("#password").val();
+    var password2 = $("#confirm").val();
+
+    if(password1 == password2) {
+        return true;
+    }
+    else {
+        document.getElementById("alert_message").style.display = 'block';
+        document.getElementById("pass_error").style.display = 'block';
         return false;
     }
 
-    switch(i){
-        case 1:
-            alert.getElement
-    }
-
-    return true;
 }
 
 function getClasses(elem){
