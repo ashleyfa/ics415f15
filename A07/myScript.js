@@ -27,15 +27,14 @@ function validateForm() {
     if(i == 1){
         document.getElementById("alert_message").style.display = 'block';
         document.getElementById("all_error").style.display = 'block';
+        j = 2;
+    }
+
+    if(checkPass() == false){
         return false;
     }
     else{
-        if(checkPass() == false){
-            return false;
-        }
-        else{
-            return true;
-        }
+       return true;
     }
 }
 
