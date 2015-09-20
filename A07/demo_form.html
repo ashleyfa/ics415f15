@@ -31,16 +31,29 @@
             </div>
         </div>
     </nav>
-
+    <div class="alert alert-danger" style ="display:none" id = "alert_message">
+        <strong>Error!</strong><span style="display:none" id ="all_error"> Please fill out the information that is highlighted in red. </span>
+        <span style ="display:none" id ="pass_error">Password does not match</span>
+    </div>
     <div class = "row">
-        <div class = "col-md-3 left-side">
-            <p id = "sider">sidebar</p>
+        <div class = "col-md-4">
+            <h3 id = "part1">Part 1 - Get Class</h3>
+            <label for="element1">HTML element: </label>
+
+            <input type="text" name="element1" id="element1">
+            <p><input type="submit" id = "myBtn" value="Submit" onclick="getClasses(document.getElementById('element1'))"></p>
+
+            <p>The class of this element is: <i><span id = "part1_answer"></span></i></p>
         </div>
-        <div class = "col-md-9">
-            <div class="alert alert-danger" style ="display:none" id = "alert_message">
-                <strong>Error!</strong><span style="display:none" id ="all_error"> Please fill out the information that is highlighted in red. </span>
-                <span style ="display:none" id ="pass_error">Password does not match</span>
-            </div>
+        <div class = "col-md-4">
+            <h3 id = "part2">Part2 - Add Class</h3>
+            <label for="element2">HTML element: </label>
+            <input type="text" name="name" id="element2">
+            <p><input type="submit" value="Submit"></p>
+        </div>
+        <div class = "col-md-4">
+            <h3>Part 3 - ValidateForm</h3>
+            <br>
 
             <form name="myForm" action = "demo_form.html" method = "get">
                 <div class="form-group">
@@ -63,7 +76,6 @@
                 </div>
                 <input type="submit" value="Submit" onclick = "return validateForm()" onchange = "return validateForm()">
             </form>
-
         </div>
 
     </div>

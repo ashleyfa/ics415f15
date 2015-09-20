@@ -1,3 +1,18 @@
+function getClasses(elem) {
+    var newelem = elem.value.replace(/</g, '');
+    var newString = newelem.substring(newelem.indexOf('class'));
+    var secondOccur = newString.substring(newString.indexOf("\"")+1);
+    var newStringAgain = secondOccur.substring(0, secondOccur.indexOf("\""));
+    var classArray = newStringAgain.split(" ");
+    document.getElementById("part1_answer").innerHTML = newStringAgain + "<br> Array: [" + classArray + "]";
+    return classArray;
+}
+
+function addClass(elem, className){
+    var newelem = elem.value.replace(/</g, '');
+
+}
+
 function validateForm() {
     var i, j;
     var w = document.forms["myForm"]["username"].value;
@@ -33,6 +48,9 @@ function validateForm() {
     if(checkPass() == false){
         return false;
     }
+    else if(j == 2){
+        return false;
+    }
     else{
        return true;
     }
@@ -51,9 +69,5 @@ function checkPass() {
         document.getElementById("pass_error").style.display = 'block';
         return false;
     }
-
-}
-
-function getClasses(elem){
 
 }
