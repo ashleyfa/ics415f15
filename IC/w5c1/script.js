@@ -12,9 +12,12 @@ $(function(){
         $("#text1").css('color', 'black');
     });
     $("p").click(function(){
-        $(this).html('hello!');
+        $("#p1").html('hello!');
     });
     $("button").click(function(){
         $("#text1").css('color', 'red');
+    });
+    $("#text1").click(function(){
+        $("#p1").html('I was changed');
     });
 });
