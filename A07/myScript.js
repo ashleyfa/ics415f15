@@ -8,6 +8,14 @@ function getClasses(elem) {
     return classArray;
 }
 
+/*
+function getClasses(elem){
+    var x = document.getElementsByTagName(elem).className;
+    var y = x.split(" ");
+
+    return y;
+}*/
+
 function addClass(elem, className) {
     var newElement = elem.value.replace(/</g, '/').replace(/>/g, '/');
     var elemSplit = newElement.split("/");
@@ -31,7 +39,17 @@ function addClass(elem, className) {
         return elem.value.replace(replaceElem, className.value);
     }
 }
-
+/*
+function addClass(elem, className){
+    var x = document.getElementById(elem);
+    if(x.indexOf(x.className) != -1){
+        x.className = x.className + className;
+    }
+    else{
+        x.className.replace(x.className, ' ' + className);
+    }
+}
+*/
 function validateForm() {
     var i, j;
     var w = document.forms["myForm"]["username"].value;
