@@ -13,6 +13,9 @@
 
     <link rel="stylesheet" type="text/css" href="layout.css">
     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.3.min.js"></script>
+    <script src = "myScript.js"></script>
 
 
 </head>
@@ -47,16 +50,14 @@
                 <a class="navbar-brand" href="index.html">Pokemon</a>
             </div>
             <div class="navbar-collapse collapse" id="searchbar">
-
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="http://www.pokemon.com/us/">About</a></li>
-                    <li><a href="../A05/forms.html">Forms</a></li>
+                    <li><a href="forms.html">Forms</a></li>
+                    <li><a href="faq.html">FAQs</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.html" title="Start a new search">Clear</a></li>
                 </ul>
-
-
 
                 <form class="navbar-form">
                     <div class="form-group" style="display:inline;">
@@ -80,50 +81,44 @@
         <div class = "col-md-9 right-side">
             <section id = "content">
                 <!--- MAIN CONTENT -->
-                <figure>
-                    <p><a href = "http://www.pokemon.com/us/" title ="pokemon.com"><img src ="http://www.junkiesnation.com/wp-content/uploads/2013/10/Pokemon-Review-Header.jpg" width="100%"></a></p>
-                </figure>
-                <p>
-                <div class="btn-group btn-group-justified">
-                    <a href="../A05/forms.html" class="btn btn-warning">Sign up for newsletter</a>
-                    <a href="../A05/forms.html" class="btn btn-warning">Sign up for newsletter</a>
-                    <a href="../A05/forms.html" class="btn btn-warning">Sign up for newsletter</a>
+                <div class="alert alert-danger" style ="display:none" id = "alert_message">
+                    <strong>Error!</strong><span style="display:none" id ="all_error"> Please fill out the information that is highlighted in red. </span>
+                    <span style ="display:none" id ="pass_error">Password does not match</span>
                 </div>
-                </p>
-                <hr>
-                <article id = "mobilegame">
-                    <h1>Pokemon Shuffle</h1>
-                    <!--http://www.ign.com/articles/2015/09/01/pokemon-shuffle-now-available-for-ios-and-android ---->
-                    <figure id = "pokeshuffle">
-                        <a href ="https://youtu.be/d5MD1wYjU-k" title="click to watch a trailer"><img class = "img-responsive" src ="http://cdn4.dualshockers.com/wp-content/uploads/2015/09/iphone-6-pokemon-shuffle-590x330.jpg"></a>
-                    </figure>
 
-                    <p>The match-three puzzle game is free on both platforms with in-game purchases available.</p>
+                <br>
+                <form name="myForm" action = "forms.html" method = "get">
+                    <div class="form-group">
+                        <label for="username">User name: </label>
+                        <input type="text" name="name" id="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                    <p>    In <i>Pokemon Shuffle</i>, players deal damage against wild Pokemon by matching three or more Pokemon in a row. Players will clear stages by using Mega-Evolved Pokemon, levelling up their own Pokemon, and matching types with wild Pokemon; any wild Pokemon that are defeated can be caught. There are currently over 150 Pokemon available.
-                        Pokemon Shuffle was first released for 3DS earlier this year, earning some 4 million downloads by mid-year. Pokemon Shuffle Mobile was announced in June.</p>
-                    <footer>
-                        <p>Article published on <time datetime = "2015-09-11" itemprop="datePublished">11th September 2015</time></p>
-                    </footer>
-                </article>
-
-                <button type="button" class="btn btn-info"><i class="fa fa-twitter"></i> 5</button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-tumblr"></i> 25</button>
-                <button type="button" class="btn btn-danger"><i class="fa fa-pinterest"></i> 9</button>
-                <button type="button" class="btn btn-success"><i class="fa fa-instagram"></i> 14</button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i> 49</button>
-
-            </section>
-        </div>
+                    <div class="form-group">
+                        <label for="password">Password: </label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm">Confirm Password: </label>
+                        <input type="password" name="confirm" id="confirm">
+                        <span id = "validate-status"></span>
+                    </div>
+                    <input type="submit" value="Submit" onclick = "return validateForm()" onchange = "return validateForm()">
+                </form>
+        </section>
     </div>
-    <div class="panel panel-default panel-static-top">
-        <div class = "container" id = "footer-nav">
-            <footer>
-                <p>Copyright (c) Ashley Fagaragan</p>
-            </footer>
+</div>
+<div class="panel panel-default panel-static-top">
+    <div class = "container" id = "footer-nav">
+        <footer>
+            <p>Copyright (c) Ashley Fagaragan</p>
+        </footer>
 
-        </div>
     </div>
+</div>
 </div>
 
 </body>
