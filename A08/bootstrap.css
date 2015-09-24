@@ -8,13 +8,17 @@
 */
 
 .container{
-
     height: 100%;
 }
 
+#container2{
+    background-image: url(bglogo.jpg);
+    background-size: 100%;
+}
 
 #navi{
     background: #3E4746;
+    width: 100%;
 }
 
 .page-header{
@@ -28,17 +32,8 @@
 
 .navbar{
     margin-bottom: 0;
-    margin-left: -15px;
     width: 100%;
-}
 
-.panel-footer{
-    margin: 0 auto;
-}
-
-a#nav_faq{
-    display: block;
-    width: 60px;
 }
 
 
@@ -110,9 +105,4 @@ a#nav_faq{
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
-}
-
-.panel-footer{
-    background-color: #3e4746;
-    margin-left: -15px;
 }

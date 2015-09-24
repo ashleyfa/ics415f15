@@ -7,39 +7,28 @@ p{
     font-family: Arial, sans-serif;
 }
 
-header, footer, section{
+header, footer, nav{
     display:block;
 }
 
-header{
+section{
+    display:block;
     width: 100%;
 }
+
 
 #wrapperHeader{
     background-image: url(bglogo.jpg);
     background-repeat: repeat-y;
     background-size: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
 }
 
 
-div#wrapperHeader div#header{
-    position: relative;
-}
-
-div#wrapperHeader div#header img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width:100%;
-    max-height:100%;
-}
-
-#container2{
-    background-image: url(bglogo.jpg);
-    background-size: 100%;
-    height: 100%;
+nav{
+    margin-bottom: 0px;
 }
 
 h1{
@@ -67,7 +56,13 @@ h1{
     display: block;
     margin: auto;
 }
-section a{
+
+.fa-plus:hover{
+    color: #f08a24;
+    text-decoration: none;
+}
+
+.fa-minus:hover{
     color: #f08a24;
     text-decoration: none;
 }
@@ -77,9 +72,9 @@ section p, h1, h3{
 }
 
 #footer-nav{
-    margin-left: -15px;
     background-color: #3E4746;
     height: 50px;
+    width: 100%;
 }
 
 
@@ -88,3 +83,7 @@ footer p{
     color: white;
 }
 
+.faqHeader{
+    color: #f04124;
+    font-size: 20px;
+}

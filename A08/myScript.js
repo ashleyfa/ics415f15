@@ -54,8 +54,13 @@ function checkPass() {
 }
 
 $(function(){
-    $("#q1_answer").hide();
-    $("#q1").click(function(){
-        $("#q1_answer").toggle();
+    $(".toggle").click(function(){
+       $(this).find('i').toggleClass('fa-plus fa-minus');
+    });
+
+    $("#button").click(function(){
+        var x = document.links.length;
+        $("#link_count").text(x);
     });
 });
+
