@@ -58,9 +58,11 @@ $(function(){
        $(this).find('i').toggleClass('fa-plus fa-minus');
     });
 
-    $("#button").click(function(){
-        var x = document.links.length;
-        $("#link_count").text(x);
+    $("#button").click(function() {
+        $.get(document.getElementById("elem_url").value, function(data){
+             var $data = $('<div>').html( data );
+            document.getElementById("link_count").innerHTML = "Number of links = " + $data.find('a[href]').length;
+        });
     });
 });
 
